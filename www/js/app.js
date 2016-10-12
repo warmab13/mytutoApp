@@ -35,10 +35,10 @@ angular.module('starter', ['ionic', 'introModule', 'beginModule'])
     .state('init', {
     url: '/init',
     templateUrl: 'templates/inicio.html',
-    controller: 'js/controllers/introController.ctrl.js'
+    controller: 'IntroController'
 });
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/tab/dash');
+  $urlRouterProvider.otherwise('/init');
 
 });
